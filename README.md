@@ -27,3 +27,5 @@ macOS/Linux:
 export GITHUB_TOKEN="YOUR_TOKEN"
 ```
 
+## Helpful links to Review 
+https://developer.hashicorp.com/terraform/language/syntax/configuration
