@@ -4,10 +4,10 @@ resource "github_repository" "tracker" {
   description = var.repository_description
   visibility  = "public"
 
-  auto_init             = true
-  has_issues            = true
-  has_projects          = false
-  has_wiki              = false
+  auto_init              = true
+  has_issues             = true
+  has_projects           = false
+  has_wiki               = false
   delete_branch_on_merge = true
 
   topics = [
