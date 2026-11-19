@@ -36,5 +36,5 @@ jobs:
       - name: Terraform Init
         run: terraform init -backend=false -input=false
 
-      - name: Terraform Validate #might not need but want to investigatre
+      - name: Terraform Validate #might not need but want to investigate
         run: terraform validate
