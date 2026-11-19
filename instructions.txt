@@ -18,7 +18,12 @@ terraform apply
 ```
 
 Review the plan before applying. Terraform creates a **public** repository named `strava-performance-tracker` by default and enables GitHub Pages from the `main` branch root.
+WARNING/ UPDATE: Repo already exists at github.com/celery-github/strava-performance-tracker.
 
+Terraform does not automatically know that an existing repository is the one it should manage. Before applying, need to import the existing repository into Terraform state, or choose a different repository name for Terraform to create. (need to update this)
+
+For an existing repository, the import command would be:
+terraform import github_repository.tracker strava-performance-tracker
 ## 4. Push this project to GitHub
 
 After Terraform creates the remote repository, return to this project root:
